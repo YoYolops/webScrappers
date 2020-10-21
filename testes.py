@@ -1,7 +1,7 @@
 import re
 
-a = 'asdas \n asd'
+a = 'camarada[133] e[1] \n'
 
-a = re.sub(r'\n', 'ZZZ', a)
+a = re.sub(r'\[.*\]|\n', '', a)
 
 print(a)
